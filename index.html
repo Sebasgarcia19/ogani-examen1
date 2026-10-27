@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Tu nombre">
+    <meta name="keywords" content="ogani, organic, vegetables, fruits, shop, bootstrap, bem">
+    <meta name="description" content="Ogani: tienda de vegetales y frutas 100% orgánicos">
+    <title>Ogani | Vegetable 100% Organic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <!-- Barra superior -->
+    <div class="topbar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6">
+            <ul class="topbar__lista">
+              <li class="topbar__item"><i class="fa-solid fa-envelope"></i> hello@colorlib.com</li>
+              <li class="topbar__item topbar__item--borde">Free Shipping for all Order of $99</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6">
+            <ul class="topbar__lista topbar__lista--derecha">
+              <li class="topbar__item topbar__item--redes">
+                <a href="#" class="topbar__red"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="topbar__red"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="topbar__red"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="topbar__red"><i class="fa-brands fa-pinterest-p"></i></a>
+              </li>
+              <li class="topbar__item topbar__item--borde">
+                <img src="https://flagcdn.com/w20/us.png" alt="US" class="topbar__bandera"> English <i class="fa-solid fa-angle-down"></i>
+              </li>
+              <li class="topbar__item topbar__item--borde">
+                <a href="#" class="topbar__enlace"><i class="fa-solid fa-user"></i> Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Encabezado: logo, menú, carrito -->
+    <header class="encabezado">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-3">
+            <a href="#" class="logo">
+              <i class="fa-solid fa-leaf logo__hoja"></i>
+              <span class="logo__texto">OGANI</span>
+            </a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <nav class="menu">
+              <ul class="menu__lista">
+                <li class="menu__item"><a href="#" class="menu__enlace menu__enlace--activo">Home</a></li>
+                <li class="menu__item"><a href="#" class="menu__enlace">Shop</a></li>
+                <li class="menu__item"><a href="#" class="menu__enlace">Pages</a></li>
+                <li class="menu__item"><a href="#" class="menu__enlace">Blog</a></li>
+                <li class="menu__item"><a href="#" class="menu__enlace">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="carrito">
+              <a href="#" class="carrito__icono">
+                <i class="fa-solid fa-heart"></i><span class="carrito__badge">1</span>
+              </a>
+              <a href="#" class="carrito__icono">
+                <i class="fa-solid fa-bag-shopping"></i><span class="carrito__badge">3</span>
+              </a>
+              <span class="carrito__total">item: <strong>$150.00</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container">
+      <div class="row">
+
+        <!-- Menú de departamentos -->
+        <aside class="col-12 col-lg-3">
+          <div class="departamentos">
+            <button class="departamentos__boton" type="button" data-bs-toggle="collapse" data-bs-target="#departamentos">
+              <span><i class="fa-solid fa-bars"></i> All departments</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="departamentos__lista collapse d-lg-block" id="departamentos">
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Fresh Meat</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Vegetables</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Fruit &amp; Nut Gifts</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Fresh Berries</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Ocean Foods</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Butter &amp; Eggs</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Fastfood</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Fresh Onion</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Papayaya &amp; Crisps</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Oatmeal</a></li>
+              <li class="departamentos__item"><a href="#" class="departamentos__enlace">Fresh Bananas</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Buscador y hero -->
+        <section class="col-12 col-lg-9">
+          <div class="row align-items-center buscador-fila">
+            <div class="col-12 col-xl-8">
+              <form class="buscador" action="#">
+                <div class="buscador__categoria">
+                  All Categories <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <input type="text" class="buscador__campo" placeholder="What do yo u need?">
+                <button type="submit" class="buscador__boton">SEARCH</button>
+              </form>
+            </div>
+            <div class="col-12 col-xl-4">
+              <div class="soporte">
+                <div class="soporte__icono"><i class="fa-solid fa-phone"></i></div>
+                <div class="soporte__info">
+                  <h5 class="soporte__telefono">+65 11.188.888</h5>
+                  <span class="soporte__texto">support 24/7 time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero">
+            <div class="hero__contenido">
+              <span class="hero__categoria">Fruit Fresh</span>
+              <h2 class="hero__titulo">Vegetable <br>100% Organic</h2>
+              <p class="hero__texto">Free Pickup and Delivery Available</p>
+              <a href="#" class="boton boton--primario">Shop now</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
