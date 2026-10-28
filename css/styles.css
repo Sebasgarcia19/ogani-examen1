@@ -82,3 +82,15 @@ ul { list-style: none; margin: 0; padding: 0; }
   .soporte { justify-content: flex-start; }
 }
 .topbar__bandera { width: 24px; margin-right: 0.4rem; vertical-align: middle; }
+
+/* Responsive: celular */
+@media (max-width: 575px) {
+  .topbar__item--borde { border-left: 0; padding-left: 0; }
+  .logo__texto { font-size: 2rem; }
+  .menu__lista { gap: 0.8rem; }
+  .menu__enlace { font-size: 0.85rem; letter-spacing: 1px; }
+  .buscador { flex-wrap: wrap; }
+  .buscador__categoria { width: 100%; padding: 0.8rem 1rem; border-right: 0; border-bottom: 1px solid var(--borde); }
+  .buscador__boton { padding: 0.8rem 1.5rem; }
+  .hero__titulo { font-size: 1.9rem; }
+}
