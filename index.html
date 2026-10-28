@@ -29,10 +29,10 @@
           <div class="col-12 col-lg-6">
             <ul class="topbar__lista topbar__lista--derecha">
               <li class="topbar__item topbar__item--redes">
-                <a href="#" class="topbar__red"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="topbar__red"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="topbar__red"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="topbar__red"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="#" class="topbar__red" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="topbar__red" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="topbar__red" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                 <a href="#" class="topbar__red" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
               </li>
               <li class="topbar__item topbar__item--borde">
                 <img src="https://flagcdn.com/w20/us.png" alt="US" class="topbar__bandera"> English <i class="fa-solid fa-angle-down"></i>
@@ -57,7 +57,7 @@
             </a>
           </div>
           <div class="col-12 col-lg-6">
-            <nav class="menu">
+            <nav class="menu" aria-label="Menú principal">
               <ul class="menu__lista">
                 <li class="menu__item"><a href="#" class="menu__enlace menu__enlace--activo">Home</a></li>
                 <li class="menu__item"><a href="#" class="menu__enlace">Shop</a></li>
@@ -69,10 +69,10 @@
           </div>
           <div class="col-12 col-lg-3">
             <div class="carrito">
-              <a href="#" class="carrito__icono">
+              <a href="#" class="carrito__icono" aria-label="Favoritos">
                 <i class="fa-solid fa-heart"></i><span class="carrito__badge">1</span>
               </a>
-              <a href="#" class="carrito__icono">
+              <a href="#" class="carrito__icono" aria-label="Carrito">
                 <i class="fa-solid fa-bag-shopping"></i><span class="carrito__badge">3</span>
               </a>
               <span class="carrito__total">item: <strong>$150.00</strong></span>
@@ -89,7 +89,7 @@
         <!-- Menú de departamentos -->
         <aside class="col-12 col-lg-3">
           <div class="departamentos">
-            <button class="departamentos__boton" type="button" data-bs-toggle="collapse" data-bs-target="#departamentos">
+            <button class="departamentos__boton" type="button" data-bs-toggle="collapse" data-bs-target="#departamentos" aria-expanded="false" aria-controls="departamentos">
               <span><i class="fa-solid fa-bars"></i> All departments</span>
               <i class="fa-solid fa-angle-down"></i>
             </button>
@@ -117,7 +117,7 @@
                 <div class="buscador__categoria">
                   All Categories <i class="fa-solid fa-angle-down"></i>
                 </div>
-                <input type="text" class="buscador__campo" placeholder="What do yo u need?">
+                <input type="text" class="buscador__campo" placeholder="What do yo u need?" aria-label="Buscar productos">
                 <button type="submit" class="buscador__boton">SEARCH</button>
               </form>
             </div>
