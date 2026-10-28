@@ -94,3 +94,11 @@ ul { list-style: none; margin: 0; padding: 0; }
   .buscador__boton { padding: 0.8rem 1.5rem; }
   .hero__titulo { font-size: 1.9rem; }
 }
+
+/* Responsive: tablet */
+@media (min-width: 576px) and (max-width: 991px) {
+  .menu__lista { gap: 2rem; }
+  .departamentos__lista { columns: 2; }
+  .hero { background-image: url('../img/banner.png'); background-size: 40%; min-height: 400px; }
+  .hero__contenido { max-width: 60%; }
+}
